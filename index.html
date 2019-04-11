@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <style>
+      body { margin:0; padding:0; }
+      #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.css">
+
+  </head>
+  <body>
+    <!-- create a placeholder for this static map -->
+    <img id='static-map'>
+    <script src='https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.js'></script>
+    <script src='sphericalmercator.js'></script>
+    <script src='geo-viewport.js'></script>
+    <script src='index.js'></script>
+    <!-- include the geo-viewport plugin -->
+    <!--
+	<script src='https://api.mapbox.com/mapbox.js/plugins/geo-viewport/v0.1.1/geo-viewport.js'></script>
+	-->
+	<!--
+	    // does not work: ReferenceError: geoViewport is not defined
+	    <script src='//api.tiles.mapbox.com/mapbox.js/plugins/geo-viewport/v0.2.1/geo-viewport.js'></script>
+	    -->
+  </body>
+</html>
